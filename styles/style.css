@@ -66,10 +66,9 @@ ol {
 .content {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: end;
   flex-direction: row;
   width: 1140px;
-  height: 534px;
   gap: 30px;
 }
 
@@ -81,7 +80,7 @@ ol {
 }
 
 .content__list-container {
-  height: 534px;
+  height: 298px;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -136,16 +135,17 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
 }
 
 .title {
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
-  font-family: Oswald;
+  line-height: 0.94;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
 }
 
@@ -187,11 +187,10 @@ ol {
 
 .content__video-card-title {
   width: 196px;
-  height: 30px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
@@ -200,10 +199,9 @@ ol {
 
 .content__video-card-description {
   width: 196px;
-  min-height: 17px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 0.9;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -237,11 +235,11 @@ ol {
 input {
   width: 225px;
   height: 27px;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-style: regular;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   color: #fff;
   border: none;
   border-top: 1px solid #FFFFFF;
@@ -286,17 +284,17 @@ input:focus-visible {
   border: 1px solid #FFFFFF;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-weight: 700;
   font-style: bold;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1;
   cursor: pointer;
+  height: 34px;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: flex-end;
 }
 
