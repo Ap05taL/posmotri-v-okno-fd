@@ -138,7 +138,7 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;      
+  line-height: 22px;
 }
 
 .title {
@@ -193,8 +193,8 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  white-space: nowrap; 
-  overflow: hidden; 
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
