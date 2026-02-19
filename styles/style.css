@@ -19,7 +19,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 1px solid red;
 }
 
 h1,
@@ -67,16 +66,14 @@ ol {
 .content {
   display: flex;
   justify-content: center;
-  align-items:  center;
+  align-items: flex-end;
   flex-direction: row;
   width: 1140px;
   height: 534px;
   gap: 30px;
-  outline: 1px solid red;
 }
 
 .search-form {
-  outline: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -84,12 +81,12 @@ ol {
 }
 
 .content__list-container {
-  outline: 1px solid red;
   height: 534px;
-  overflow: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .content__details {
@@ -104,6 +101,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
@@ -144,8 +142,6 @@ ol {
 }
 
 .title {
-  width: 259px;
-  height: 210px;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -158,8 +154,35 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
+  cursor: pointer;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__video-card-title {
@@ -203,7 +226,8 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.5px;
+  gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -256,4 +280,43 @@ input:focus-visible {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+}
+
+.button {
+  border: 1px solid #FFFFFF;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
 }
